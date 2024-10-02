@@ -99,6 +99,7 @@ header label {
 
 
 @media (min-width: 700px) {
+    header {}
     .logo {
         width: 90px;
     }
@@ -117,4 +118,11 @@ header label {
     .products-area {
         grid-template-columns: 1fr;
     }
+.tittle-section h1 {
+    font-size: 6rem;
+}
+
+.tittle-section p {
+    font-size: 2rem;
+}
 }
