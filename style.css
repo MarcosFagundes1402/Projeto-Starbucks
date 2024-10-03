@@ -69,7 +69,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 20px;
-    background-position: right 5px center;
+    background-position: right 15px center;
     border: 2px solid #b8b8b8;
     outline-color: #828282;
     box-sizing: border-box;
@@ -135,6 +135,7 @@ p {
     background-color: #fff;
     border-radius: 5px;
     font-weight: 800;
+    font-size: 1.6rem;
 }
 
 .button:hover {
@@ -169,4 +170,104 @@ p {
     background-repeat: no-repeat;
     background-position: top;
     height: 30vh;
+}
+@media (min-width:700px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .products-area {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bar-container1 hr {
+        display: none;
+    }
+
+    .container3 {
+        background-position: center;
+    }
+
+    .container2 {
+        background-position: center;
+    }
+
+    .logo {
+        width: 90px;
+        height: auto;
+    }
+
+    .input-lupe {
+        width: 300px;
+        height: 50px;
+        background-size: 25px;
+    }
+
+    .header-menu {
+        width: 70px;
+        height: auto;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width:1000px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    .products-area {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 90px;
+        height: auto;
+    }
+
+    .input-lupe {
+        width: 300px;
+        height: 50px;
+        background-size: 25px;
+    }
+
+    .header-menu {
+        width: 70px;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    .section-aboutus {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* 3 colunas de igual largura */
+        grid-template-areas:
+            "a a c3"
+            "c2 c2 c3";
+    }
+
+    .aboutus--area {
+        grid-area: a;
+        padding: 20px;
+    }
+
+    .container2 {
+        grid-area: c2;
+    }
+
+    .container3 {
+        grid-area: c3;
+    }
+
 }
