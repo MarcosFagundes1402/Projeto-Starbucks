@@ -42,7 +42,8 @@ h1 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+        font-weight: 600;
 }
 
 /* STYLE HEADER*/
@@ -81,18 +82,23 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: inherit;
-    text-align: left;
+    text-align: center;
     padding: 20px;
 }
 
 .products-area {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    max-width: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     padding: 20px;
     box-sizing: border-box;
     gap: 20px;
 }
 
+.products-area img {
+    width: 100px;
+}
 .products {
     width: 80px;
     border: 5px solid var(--starbucks--green);
@@ -103,34 +109,64 @@ p {
 
 /*----------------------------------------------------------------------------*/
 /* STYLE ABOUTUS TITTLE */
-.section-aboutus {
-    width: inherit;
-    max-width: 100%;
-}
-
 .section-aboutus--area {
-    display: grid;
-    grid
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.photo,
-.photo2 {
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
+.container1 {
+    text-align: center;
+    align-items: right;
+}
+
+.bar-container1 hr {
+    border: 7px solid var(--starbucks--green);
+    width: 50px;
+    text-align: left;
+}
+
+.button {
+    width: 140px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.button:hover {
+    background-color: var(--starbucks--green);
+    color: #fff;
+}
+
+.aboutus--area small {
+    font-size: 1rem;
+    color: #727272;
+}
+
+.aboutus--area p {
+    margin-top: 20px;
+}
+
+.container2,
+.container3 {
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 40vh;
+}
+
+.container2 {
     background-image: url(./assets/f1.jpg);
 }
 
-.section-aboutus h1 {
-    font-size: 3rem;
-}
-
-.bar-aboutus {
-    display: flex;
-    justify-content: space-around;
-}
-
-.section-aboutus hr {
-    border: 10px solid var(--starbucks--green);
-    width: 50px;
+.container3 {
+    background-image: url(./assets/f2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 30vh;
 }
