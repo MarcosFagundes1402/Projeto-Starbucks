@@ -25,7 +25,7 @@ header {
 }
 
 button {
-    background-color: #fff;
+    background-color: #ffffff00;
     padding: 10px;
     width: 120px;
     border-radius: 5px;
@@ -51,6 +51,19 @@ p {
     width: 100%;
 }
 
+footer {
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+}
 /*HEADER STYLE*/
 .header-container {
     display: flex;
@@ -80,25 +93,9 @@ p {
     border-radius: 5px;
 }
 
-/*SECTION STYLE*/
+/*SECTION STYLE CONTAINER*/
 
-.products-highlights {
-    width: 100%;
-    background-image: url(./assets/bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-}
 
-.photo-products {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-}
 
 .products-area h1,
 .products-area p {
@@ -134,16 +131,42 @@ p {
     padding: 0;
 }
 
-.comments {
+.product {
     padding: 20px;
 }
 
-.photo1 {
-    background-image: url(./assets/f3.jpg);
+.section-frappuccino {
+    margin: 0;
+    padding: 0;
 }
 
-.photo2 {
-    background-image: url(./assets/f4.jpg);
+.frappucciono-container {
+    padding: 20px;
+}
+
+/*IMAGES STYLE*/
+.products-highlights {
+    width: 100%;
+    background-image: url(./assets/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.photo-products,
+.collection,
+.frappucciono-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.comments {
+    padding: 20px;
 }
 
 .product-introduction {
@@ -151,26 +174,46 @@ p {
     padding: 0;
 }
 
-.product {
-    padding: 20px;
+.photo1 {
+    background-image: url(./assets/f1.jpg);
 }
+
+.photo2 {
+    background-image: url(./assets/f2.jpg);
+}
+
+.introducing-bg-img {
+    background-image: url(./assets/f3.jpg);
+}
+.introducing-bg-img2 {
+    background-image: url(./assets/f4.jpg);
+}
+.frappucciono-info {
+    background-image: url(./assets/bg2.jpg);
+}
+
+.frappuccino {
+    background-image: url(./assets/f5.jpg);
+}
+
+.collection {
+    justify-content: space-between;
+    background-image: url(./assets/bg3.jpg);
+    background-position: end;
+    height: 60vh;
+}
+/*bg para colocar todas as imagens de fundo mais padrão*/
+.bg {
+    width: 100vw;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+}
+
 
 .product h1 {
     font-size: 2.8rem;
     text-align: center;
     margin-top: 0;
     margin-bottom: 40px;
-}
-
-.introducing-bg-img2 {
-    background-image: url(./assets/f5.jpg);
-}
-
-.photo1,
-.photo2,
-.introducing-bg-img2 {
-    width: 100vw;
-    height: 50vh;
-    background-position: center;
-    background-size: cover;
 }
