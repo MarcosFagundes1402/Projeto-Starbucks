@@ -20,8 +20,8 @@ body {
 }
 
 header {
-
     max-height: 90px;
+    border-top: 6px solid var(--starbucks--green);
 }
 
 button {
@@ -71,7 +71,6 @@ footer p {
     align-items: center;
     padding: 10px;
     box-sizing: border-box;
-    border-top: 6px solid var(--starbucks--green);
 }
 
 .header-container img {
@@ -216,4 +215,57 @@ footer p {
     text-align: center;
     margin-top: 0;
     margin-bottom: 40px;
+}
+
+@media (min-width:700px){
+    header{
+        width: 100%;
+        margin: auto;
+        border-top: 6px solid var(--starbucks--green);
+    }
+        .header-container{
+            width: 600px;
+            margin: auto;
+        }
+        .header-container img {
+            width: 70px;
+        }
+        .header-container input{
+            width: 250px;
+            height: 50px;
+            font-size: 1.8rem;
+            background-position: right 10px center;
+        }
+
+    h1 {
+        font-size: 4rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    .photo-products{
+        flex-direction: row;
+        gap: 40px;
+        margin: 40px;
+    }
+        .photo-products img{
+            width: 100px;
+        }
+    .mission-comments {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+    }
+    .comments{
+        grid-area: 1;
+        grid-row: 1;
+    }
+    .photo1 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .photo2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
 }
